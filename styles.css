@@ -1,0 +1,350 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+p {
+  margin: 2% 20%;
+  font-size: 1.25em;
+}
+
+.byline {
+  margin: 5% 10%;
+  font-size: 1.25em;
+}
+
+p, blockquote {
+  line-height: 1.3em;
+}
+
+blockquote {
+  line-height: 1.7em;
+  font-size: 1.5em;
+  font-weight: bolder;
+  background-color: lightgrey;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 1px;
+}
+
+.attribution {
+  text-align: right;
+  font-style: italic;
+}
+
+.headercontainer {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.headerh1 {
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto Slab', serif;
+  font-variant: small-caps;
+  font-size: 4em;
+}
+
+.headerh2 {
+  position: relative;
+  width: 70%;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Roboto Slab', serif;
+  font-size: 3em;
+}
+
+/* OVERRIDES */
+
+/* Smartphones at vertical portrait width */
+
+@media only screen and (min-width: 320px) {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+  .images {
+    display: inline;
+    width: 50%;
+    height: 50%;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .parallax {
+    display: none;
+  }
+  #text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+  }
+  caption {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+  img.header {
+    max-width: 100%;
+    max-height: 50%;
+  }
+  .headerh1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+  }
+  .headerh2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+  }
+  .stationaryImage {
+    display: block;
+  }
+}
+
+/* Tablets at vertical portrait width */
+
+@media only screen and (min-width: 480px) {
+  .parallax {
+    display: none;
+  }
+  .images {
+    display: inline;
+    width: 50%;
+    height: 50%;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .stationaryImage {
+    display: block;
+  }
+  #text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+  }
+  caption {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+  img.header {
+    max-width: 100%;
+    max-height: 50%;
+  }
+  .headerh1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+  }
+  .headerh2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 681px) {
+  img {
+    max-width: 90%;
+  }
+  img.header {
+    max-width: 100%;
+    max-height: 50%;
+  }
+  .headerh1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+  }
+  .headerh2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+  }
+  .stationaryImage {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 729px) {
+  .headerh1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5em;
+  }
+  .headerh2 {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+  }
+  img {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  img.header {
+    max-width: 100%;
+    max-height: 50%;
+  }
+}
+
+/* Tablets at horizontal portrait width */
+
+@media only screen and (min-width: 768px) {
+  #map {
+    height: 400px;
+    width: 100%;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 18px;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .parallax {
+    /* The image used */
+    background-image: url("images/header/headerScaffolding.jpg");
+    /* Set a specific height */
+    height: 700px;
+    width: 100%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+  }
+  .images {
+    display: none;
+  }
+  #text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+  }
+}
+
+/* Laptops and desktop monitors with large horizontal widths */
+
+@media only screen and (min-width: 1200px) {
+  #map {
+    height: 600px;
+    width: 65%;
+    margin: auto;
+  }
+  #main {
+    text-align: center;
+  }
+  #text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 250px;
+    margin-left: 250px;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    text-align: center;
+  }
+  h2 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2.5px;
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Roboto', sans-serif;
+  }
+  .images {
+    display: none;
+  }
+  .headercontainer {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .headerh1 {
+    position: absolute;
+    width: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Slab', serif;
+    font-variant: small-caps;
+    font-size: 5em;
+    opacity: 0.8;
+  }
+  .headerh2 {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto Slab', serif;
+    font-size: 3em;
+    opacity: 0.8;
+  }
+}
